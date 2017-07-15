@@ -68,9 +68,10 @@ $desktop-width: 1024px;
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
+$test: linear-gradient(#02ACF4, #FEFEFE);
 
 @mixin header-bg {
-  background: linear-gradient(#02ACF4, #FEFEFE);
+  background: $test;
 }
 
 @mixin main-bg {
@@ -102,6 +103,13 @@ $desktop-width: 1024px;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+}
+
+@mixin parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
