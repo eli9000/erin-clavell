@@ -1,0 +1,107 @@
+/*******************************************************************************
+																	STYLING
+*******************************************************************************/
+
+
+// ******************************** Font Style:
+$font-family:						"Times New Roman", Times, serif; 
+$font-light:						300;
+$font-weight:						400; // (reset)
+$font-medium:						500;
+$font-bold:							700;
+
+// ******************************** Text Size:
+$reg:							      14pt; // (reset)
+$large:						      40px;
+$huge:							    60px;
+
+// ******************************** Colors:
+$primary: 							#5C5D8D;
+$secondary: 						#A8C69F;
+$tertiary:							#99A1A6;
+$base:									#14141e;
+$gray: 									#878787;
+
+// ******************************** Colors: Text
+$color:									$base; // (reset)
+
+// ******************************** Colors: Borders
+$border-color:					#979797;
+$border-gray-solid:			#aaaab4;
+$border-gray: 					transparentize($border-gray-solid, 0.6);
+$border-dark:						$base;
+
+// ******************************* Colors: Gradients
+
+// ******************************* Colors: Reference
+$white:									#ffffff;
+$light-gray:   		      #ededf0;
+$black:									$base;
+
+/*******************************************************************************
+															MEDIA QUERIES
+*******************************************************************************/
+
+$phone-width: 414px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+	@media (min-width: 1px) and (max-width: #{$phone-width}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+
+/*******************************************************************************
+																	MIXINS
+*******************************************************************************/
+
+@mixin header-bg {
+  background: linear-gradient(#02ACF4, #FEFEFE);
+}
+
+@mixin main-bg {
+  background: linear-gradient(#FEFEFE, #02ACF4);
+}
+
+@mixin component-main {
+	flex: 1;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	color: $primary;
+	height: 100%;
+	width: 100%;
+	padding-top: 4em;
+	font-family: Courier New, Courier, monospace;
+	box-sizing: border-box;
+	background-color: #EFF4ED;
+	@include tablet {
+		width: 80%;
+	}
+	@include desktop {
+		width: 60%;
+	}
+}
+
+@mixin flexbox-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+

@@ -1,0 +1,13 @@
+@import '_variables.scss';
+
+.Main {
+  @include main-bg;
+  color: $black;
+  height: 50vh;
+
+  h1 {
+    margin-top: 0;
+    padding-top: 10%;
+    font-size: $huge
+  }
+}
