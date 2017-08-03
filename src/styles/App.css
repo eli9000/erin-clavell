@@ -19,16 +19,14 @@
 .Header {
   background: #02ACF4;
   color: #14141e;
-  height: 20vh;
+  height: 10vh;
   width: 100%;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
   z-index: 9999;
   top: 0;
   position: fixed; }
   .Header h1 {
-    margin-top: 0;
-    padding-top: 5%;
+    margin: 0;
+    padding-top: 5px;
     font-size: 60px;
     box-sizing: border-box; }
 
@@ -48,11 +46,11 @@
   background-size: cover;
   background-image: url("/images/ec-bg.jpg");
   color: #14141e;
-  height: 80vh;
-  padding-top: 20vh;
+  height: 90vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: flex-start; }
-  .Main .Welcome {
+  .Main .Main-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
     width: 50%; }
@@ -69,10 +67,11 @@
 .About {
   background: linear-gradient(#FEFEFE, #02ACF4);
   color: #14141e;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-bottom: 2px solid #878787; }
   .About .About-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
@@ -94,9 +93,9 @@
 																	MIXINS
 *******************************************************************************/
 .Issues {
-  background: linear-gradient(#FEFEFE, #02ACF4);
+  background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between; }
   .Issues .Issues-Content {
@@ -122,11 +121,10 @@
   background-size: cover;
   background-image: url("/images/ec-bg2.jpg");
   color: #14141e;
-  height: 80vh;
-  padding-top: 20vh;
+  height: 90vh;
   display: flex;
   justify-content: flex-end; }
-  .Involve .How {
+  .Involve .Involve-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
     width: 50%; }
@@ -142,11 +140,12 @@
 *******************************************************************************/
 .Footer {
   color: #14141e;
-  height: 20vh; }
+  height: 10vh; }
   .Footer h1 {
-    margin-top: 0;
-    padding-top: 20px;
-    font-size: 60px; }
+    margin: 0;
+    padding-top: 5px;
+    font-size: 60px;
+    box-sizing: border-box; }
 
 .App {
   text-align: center;

@@ -3,10 +3,11 @@
 .About {
   @include main-bg;
   color: $black;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  border-bottom: 2px solid $gray;
 
   .About-Content {
     background-color: transparentize($white, 0.3);

@@ -8,9 +8,9 @@
 																	MIXINS
 *******************************************************************************/
 .Issues {
-  background: linear-gradient(#FEFEFE, #02ACF4);
+  background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between; }
   .Issues .Issues-Content {

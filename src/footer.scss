@@ -3,11 +3,12 @@
 .Footer {
   // @include header-bg;
   color: $black;
-  height: 20vh;
+  height: 10vh;
 
   h1 {
-    margin-top: 0;
-    padding-top: 20px;
-    font-size: $huge
+    margin: 0;
+    padding-top: 5px;
+    font-size: $huge;
+    box-sizing: border-box;
   }
 }

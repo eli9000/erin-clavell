@@ -4,12 +4,12 @@
   @include parallax;
   background-image: url('/images/ec-bg.jpg');
   color: $black;
-  height: 80vh;
-  padding-top: 20vh;
+  height: 90vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: flex-start;
 
-  .Welcome {
+  .Main-Content {
     background-color: transparentize($white, 0.3);
     align-self: center;
     width: 50%;

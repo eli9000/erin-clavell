@@ -22,23 +22,27 @@ class App extends Component {
         <Header />
 
         <Main className="Main">
-          <Content className="Welcome">
-
+          <Content className="Main-Content" title="Welcome">
+            Text Here?
           </Content>
         </Main>
 
         <About className="About">
-          <Content className="About-Content" />
+          <Content className="About-Content" title="About Me">
+
+          </Content>
           <Image className="About-Image" src="/images/ec-about.jpg" height="auto" width="60%" />
         </About>
 
         <Issues className="Issues">
-          <Content className="Issues-Content" />
+          <Content className="Issues-Content" title="On the Issues">
+
+          </Content>
           <Image className="Issues-Image" src="/images/ec-transparent.png" />
         </Issues>
 
         <Involve className="Involve">
-          <Content className="How">
+          <Content className="Involve-Content" title="Get Involved">
 
           </Content>
         </Involve>

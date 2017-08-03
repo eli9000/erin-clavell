@@ -10,10 +10,11 @@
 .About {
   background: linear-gradient(#FEFEFE, #02ACF4);
   color: #14141e;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-bottom: 2px solid #878787; }
   .About .About-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
