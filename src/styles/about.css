@@ -10,7 +10,7 @@
 .About {
   background: linear-gradient(#FEFEFE, #02ACF4);
   color: #14141e;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -18,10 +18,17 @@
   .About .About-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
-    width: 50%; }
+    width: 60%; }
   .About .About-Image {
     align-self: center;
-    width: 50%; }
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
     .About .About-Image img {
       border: 3px #5C5D8D solid;
-      border-radius: 50%; }
+      border-radius: 50%;
+      align-self: center;
+      width: 100%;
+      height: auto; }

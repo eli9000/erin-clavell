@@ -6,7 +6,7 @@ class Content extends Component {
   render() {
     return (
       <div className={this.props.className}>
-        <h3>{this.props.title}</h3>
+        <h1>{this.props.title}</h1>
         {this.props.children}
       </div>
     );

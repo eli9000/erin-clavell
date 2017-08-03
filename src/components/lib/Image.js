@@ -15,8 +15,8 @@ class Image extends Component {
 Image.propTypes = {
   className: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  width: PropTypes.string,
 };
 
 export default Image;

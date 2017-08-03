@@ -3,14 +3,17 @@
 .Issues {
   @include main-bg-rev;
   color: $black;
-  height: 90vh;
+  height: $main-height;
   display: flex;
   justify-content: space-between;
 
   .Issues-Content {
     background-color: transparentize($white, 0.3);
     align-self: center;
-    width: 50%;
+    width: 80%;
+    max-height: 60vh;
+    overflow: scroll;
+    
   }
 
   .Issues-Image {

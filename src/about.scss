@@ -3,7 +3,7 @@
 .About {
   @include main-bg;
   color: $black;
-  height: 90vh;
+  height: $main-height;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -12,16 +12,20 @@
   .About-Content {
     background-color: transparentize($white, 0.3);
     align-self: center;
-    width: 50%;
+    width: 60%;
   }
 
   .About-Image {
     align-self: center;
-    width: 50%;
+    width: 30%;
+    @include flexbox-center;
 
     img {
       border: 3px $primary solid;
       border-radius: 50%;
+      align-self: center;
+      width: 100%;
+      height: auto;
     }
   }
 }

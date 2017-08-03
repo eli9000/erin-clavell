@@ -4,7 +4,7 @@
   @include parallax;
   background-image: url('/images/ec-bg2.jpg');
   color: $black;
-  height: 90vh;
+  height: $main-height;
   display: flex;
   justify-content: flex-end;
 

@@ -14,8 +14,8 @@
   background-size: cover;
   background-image: url("/images/ec-bg.jpg");
   color: #14141e;
-  height: 90vh;
-  padding-top: 10vh;
+  height: 80vh;
+  padding-top: 20vh;
   display: flex;
   justify-content: flex-start; }
   .Main .Main-Content {

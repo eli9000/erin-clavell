@@ -1,18 +1,33 @@
 @import '_variables.scss';
 
 .Header {
-  @include header-bg;
+  // @include header-bg;
   color: $black;
-  height: 10vh;
+  min-height: 20vh;
+  max-height: 20vh;
   width: 100%;
   z-index: 9999;
   top: 0;
   position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 
-  h1 {
-    margin: 0;
-    padding-top: 5px;
-    font-size: $huge;
-    box-sizing: border-box;
+  .header-top-row {
+    @include header-bg;
+  }
+
+  .header-bottom-row {
+    display: flex;
+    background-color: #fefefe;
+    overflow: hidden;
+
+    img {
+      align-self: flex-end;
+    }
+
+    h3 {
+      align-self: center;
+    }
   }
 }

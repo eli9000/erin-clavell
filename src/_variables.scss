@@ -23,7 +23,6 @@ $base:									#14141e;
 $gray: 									#878787;
 $base-bg:               #02ACF4; // rgba(2, 172, 244)
 
-
 // ******************************** Colors: Text
 $color:									$base; // (reset)
 
@@ -34,20 +33,28 @@ $border-gray: 					transparentize($border-gray-solid, 0.6);
 $border-dark:						$base;
 
 // ******************************* Colors: Gradients
+$base-gradient:         linear-gradient(#02ACF4, #FEFEFE);
 
 // ******************************* Colors: Reference
 $white:									#ffffff;
 $light-gray:   		      #ededf0;
 $black:									$base;
 
+// ******************************* Window Sizes
+$header-height:         20vh;
+$main-height:           80vh;
+
 /*******************************************************************************
 															MEDIA QUERIES
 *******************************************************************************/
 
+
+// ******************************** Device Breakpoints
 $phone-width: 414px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+// ******************************** Device Queries
 @mixin phone {
 	@media (min-width: 1px) and (max-width: #{$phone-width}) {
 		@content;
@@ -70,10 +77,11 @@ $desktop-width: 1024px;
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
-$test: linear-gradient(#02ACF4, #FEFEFE);
 
+
+// ******************************** Background Mixins
 @mixin header-bg {
-  background: $base-bg;
+  background: $base-gradient;
   // background: -webkit-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Safari 5.1-6*/
   // background: -o-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Opera 11.1-12*/
   // background: -moz-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Fx 3.6-15*/
@@ -88,33 +96,6 @@ $test: linear-gradient(#02ACF4, #FEFEFE);
   background: linear-gradient(#02acf4,#FEFEFE);
 }
 
-@mixin component-main {
-	flex: 1;
-	align-self: center;
-	display: flex;
-	flex-direction: column;
-	color: $primary;
-	height: 100%;
-	width: 100%;
-	padding-top: 4em;
-	font-family: Courier New, Courier, monospace;
-	box-sizing: border-box;
-	background-color: #EFF4ED;
-	@include tablet {
-		width: 80%;
-	}
-	@include desktop {
-		width: 60%;
-	}
-}
-
-@mixin flexbox-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-}
-
 @mixin parallax {
   background-attachment: fixed;
   background-position: center;
@@ -122,4 +103,10 @@ $test: linear-gradient(#02ACF4, #FEFEFE);
   background-size: cover;
 }
 
-
+// ******************************** Flexbox Mixins
+@mixin flexbox-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}

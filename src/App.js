@@ -11,6 +11,12 @@ import Footer from './components/Footer.js';
 // Component Libs Imports:
 import Content from './components/lib/Content.js';
 import Image from './components/lib/Image.js';
+import RenderList from './components/lib/RenderList.js';
+
+// DATA Imports
+import VOWS from './vowsdata.js';
+import ABOUT from './aboutdata.js';
+import ISSUES from './issuesdata.js';
 
 // CSS Imports:
 import './styles/App.css';
@@ -23,20 +29,20 @@ class App extends Component {
 
         <Main className="Main">
           <Content className="Main-Content" title="Welcome">
-            Text Here?
+            <RenderList className="RenderList-Main" data={VOWS} />
           </Content>
         </Main>
 
         <About className="About">
           <Content className="About-Content" title="About Me">
-
+            <RenderList className="RenderList-About" data={ABOUT} />
           </Content>
           <Image className="About-Image" src="/images/ec-about.jpg" height="auto" width="60%" />
         </About>
 
         <Issues className="Issues">
           <Content className="Issues-Content" title="On the Issues">
-
+            <RenderList className="RenderList-Issues" data={ISSUES} />
           </Content>
           <Image className="Issues-Image" src="/images/ec-transparent.png" />
         </Issues>
