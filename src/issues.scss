@@ -1,0 +1,19 @@
+@import '_variables.scss';
+
+.Issues {
+  @include main-bg;
+  color: $black;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+
+  .Issues-Content {
+    background-color: transparentize($white, 0.3);
+    align-self: center;
+    width: 50%;
+  }
+
+  .Issues-Image {
+    align-self: flex-end;
+  }
+}

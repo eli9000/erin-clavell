@@ -21,6 +21,8 @@ $secondary: 						#A8C69F;
 $tertiary:							#99A1A6;
 $base:									#14141e;
 $gray: 									#878787;
+$base-bg:               #02ACF4; // rgba(2, 172, 244)
+
 
 // ******************************** Colors: Text
 $color:									$base; // (reset)
@@ -71,7 +73,11 @@ $desktop-width: 1024px;
 $test: linear-gradient(#02ACF4, #FEFEFE);
 
 @mixin header-bg {
-  background: $test;
+  background: $base-bg;
+  // background: -webkit-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Safari 5.1-6*/
+  // background: -o-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Opera 11.1-12*/
+  // background: -moz-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Fx 3.6-15*/
+  // background: linear-gradient(rgba(2,172,244,1), rgba(254,254,254,0)); /*Standard*/
 }
 
 @mixin main-bg {

@@ -7,11 +7,20 @@
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
-.About, .Issues, .Plan, .Involve {
+.About {
   background: linear-gradient(#FEFEFE, #02ACF4);
   color: #14141e;
-  height: 80vh; }
-  .About h1, .Issues h1, .Plan h1, .Involve h1 {
-    margin-top: 0;
-    padding-top: 30px;
-    font-size: 60px; }
+  height: 80vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; }
+  .About .About-Content {
+    background-color: rgba(255, 255, 255, 0.7);
+    align-self: center;
+    width: 50%; }
+  .About .About-Image {
+    align-self: center;
+    width: 50%; }
+    .About .About-Image img {
+      border: 3px #5C5D8D solid;
+      border-radius: 50%; }

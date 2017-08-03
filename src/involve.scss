@@ -1,0 +1,18 @@
+@import '_variables.scss';
+
+.Involve {
+  @include parallax;
+  background-image: url('/images/ec-bg2.jpg');
+  color: $black;
+  height: 80vh;
+  padding-top: 20vh;
+  display: flex;
+  justify-content: flex-end;
+
+
+  .How {
+    background-color: transparentize($white, 0.3);
+    align-self: center;
+    width: 50%;
+  }
+}

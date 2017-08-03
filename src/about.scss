@@ -1,13 +1,26 @@
 @import '_variables.scss';
 
-.About, .Issues, .Plan, .Involve {
+.About {
   @include main-bg;
   color: $black;
   height: 80vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 
-  h1 {
-    margin-top: 0;
-    padding-top: 30px;
-    font-size: $huge
+  .About-Content {
+    background-color: transparentize($white, 0.3);
+    align-self: center;
+    width: 50%;
+  }
+
+  .About-Image {
+    align-self: center;
+    width: 50%;
+
+    img {
+      border: 3px $primary solid;
+      border-radius: 50%;
+    }
   }
 }
