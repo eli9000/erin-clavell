@@ -6,12 +6,15 @@
   height: $main-height;
   display: flex;
   justify-content: space-between;
+  padding-top: 20vh;
+
 
   .Issues-Content {
     background-color: transparentize($white, 0.3);
     align-self: center;
     width: 80%;
     max-height: 60vh;
+    margin-left: 20px;
     overflow: scroll;
     
   }

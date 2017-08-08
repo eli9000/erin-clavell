@@ -6,7 +6,4 @@ var VOWS = [
   { id: 4, text: 'Work to make transportation more accessible' }
 ]
 
-
-
-
 export default VOWS;

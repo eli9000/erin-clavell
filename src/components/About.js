@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
-// Component Libs Imports:
-import './lib/Image.js';
-import './lib/Content.js';
+import Content from './lib/Content.js';
+import RenderList from './lib/RenderList.js';
+import Image from './lib/Image.js';
 
-// CSS Imports:
-import '../main.scss';
-
+import ABOUT from '../data/aboutdata.js';
 class About extends Component {
   render() {
     return (
-      <div className={this.props.className}>
-        {this.props.children}
+      <div className="About" id="about">
+        <Content className="About-Content" title="About Me">
+          <RenderList className="RenderList-About" data={ABOUT} />
+        </Content>
+        <Image className="About-Image" src="/images/ec-about.jpg" height="auto" width="60%" />
       </div>
     );
   }
 }
-
-About.propTypes = {
-  className: PropTypes.string.isRequired,
-};
 
 export default About;

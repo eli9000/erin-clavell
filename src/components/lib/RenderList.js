@@ -17,7 +17,7 @@ class RenderList extends Component {
 
 RenderList.propTypes = {
   className: PropTypes.string.isRequired,
-  data: PropTypes.func,
+  data: PropTypes.array,
 };
 
 export default RenderList;

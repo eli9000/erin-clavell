@@ -18,25 +18,76 @@
 *******************************************************************************/
 .Header {
   color: #14141e;
-  min-height: 20vh;
-  max-height: 20vh;
+  background-color: white;
+  min-height: 15vh;
+  max-height: 15vh;
   width: 100%;
   z-index: 9999;
   top: 0;
   position: fixed;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start; }
-  .Header .header-top-row {
-    background: linear-gradient(#02ACF4, #FEFEFE); }
-  .Header .header-bottom-row {
-    display: flex;
-    background-color: #fefefe;
-    overflow: hidden; }
-    .Header .header-bottom-row img {
-      align-self: flex-end; }
-    .Header .header-bottom-row h3 {
-      align-self: center; }
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-shadow: 3px 3px 3px #14141e; }
+  .Header .header-image {
+    box-sizing: border-box;
+    background-color: white;
+    padding-top: 8px;
+    height: 100%; }
+  .Header .header-rows {
+    width: 100%; }
+    .Header .header-rows .header-top-row {
+      background: linear-gradient(#02ACF4, #FEFEFE);
+      display: flex;
+      justify-content: center;
+      height: 50px; }
+      .Header .header-rows .header-top-row .header-contact {
+        align-self: center;
+        width: 100%;
+        margin-left: 20px; }
+      .Header .header-rows .header-top-row .header-donate {
+        align-self: center;
+        text-align: right;
+        width: 100%;
+        margin-right: 20px; }
+    .Header .header-rows .header-bottom-row {
+      display: flex;
+      background-color: #fefefe;
+      overflow: hidden;
+      height: 80px; }
+      .Header .header-rows .header-bottom-row .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%; }
+        .Header .header-rows .header-bottom-row .navbar ul {
+          display: flex;
+          justify-content: flex-start;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          width: 100%; }
+          .Header .header-rows .header-bottom-row .navbar ul li {
+            margin-left: 50px; }
+            .Header .header-rows .header-bottom-row .navbar ul li a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 10px 16px;
+              text-decoration: none;
+              font-size: 20px; }
+            .Header .header-rows .header-bottom-row .navbar ul li a:hover {
+              background-color: lightcyan; }
+            .Header .header-rows .header-bottom-row .navbar ul li .active {
+              border-bottom: 3px solid red;
+              border-top: 3px solid red; }
+          .Header .header-rows .header-bottom-row .navbar ul li:nth-child(5) {
+            margin-left: auto;
+            background-color: gold; }
+            .Header .header-rows .header-bottom-row .navbar ul li:nth-child(5) a:hover {
+              background-color: red;
+              color: white; }
 
 /*******************************************************************************
 																	STYLING
@@ -54,14 +105,26 @@
   background-size: cover;
   background-image: url("/images/ec-bg.jpg");
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   padding-top: 20vh;
   display: flex;
-  justify-content: flex-start; }
+  flex-flow: column nowrap; }
+  .Main .Main-Quote {
+    align-self: flex-start;
+    margin: 0 0 80px 40px;
+    font-size: 60px;
+    color: #14141e;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px whitesmoke; }
+  .Main .endorsements {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin-bottom: 30px;
+    margin-left: 20px; }
   .Main .Main-Content {
     background-color: rgba(255, 255, 255, 0.7);
-    align-self: center;
-    width: 50%; }
+    width: 50%;
+    margin-left: 20px; }
 
 /*******************************************************************************
 																	STYLING
@@ -73,13 +136,13 @@
 																	MIXINS
 *******************************************************************************/
 .About {
-  background: linear-gradient(#FEFEFE, #02ACF4);
+  background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  border-bottom: 2px solid #878787; }
+  padding-top: 20vh; }
   .About .About-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
@@ -94,6 +157,7 @@
     .About .About-Image img {
       border: 3px #5C5D8D solid;
       border-radius: 50%;
+      box-shadow: 5px 5px 10px gray;
       align-self: center;
       width: 100%;
       height: auto; }
@@ -110,14 +174,16 @@
 .Issues {
   background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 20vh; }
   .Issues .Issues-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
     width: 80%;
     max-height: 60vh;
+    margin-left: 20px;
     overflow: scroll; }
   .Issues .Issues-Image {
     align-self: flex-end; }
@@ -138,13 +204,15 @@
   background-size: cover;
   background-image: url("/images/ec-bg2.jpg");
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding-top: 20vh; }
   .Involve .Involve-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
-    width: 50%; }
+    width: 50%;
+    margin-right: 20px; }
 
 /*******************************************************************************
 																	STYLING
@@ -156,13 +224,26 @@
 																	MIXINS
 *******************************************************************************/
 .Footer {
-  color: #14141e;
-  height: 10vh; }
-  .Footer h1 {
-    margin: 0;
-    padding-top: 5px;
-    font-size: 60px;
-    box-sizing: border-box; }
+  background: linear-gradient(#FEFEFE, #02ACF4);
+  background-color: #878787;
+  color: #ffffff;
+  height: 5vh;
+  max-height: 5vh;
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 2px solid gray; }
+  .Footer .copyright {
+    align-self: center;
+    width: 100%;
+    margin-left: 20px; }
+  .Footer .social {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-around; }
 
 .App {
   min-height: 100vh; }
+
+h1 {
+  margin-left: 30px; }

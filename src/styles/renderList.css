@@ -7,21 +7,5 @@
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
-.Footer {
-  background: linear-gradient(#FEFEFE, #02ACF4);
-  background-color: #878787;
-  color: #ffffff;
-  height: 5vh;
-  max-height: 5vh;
-  display: flex;
-  flex-flow: row nowrap;
-  border-top: 2px solid gray; }
-  .Footer .copyright {
-    align-self: center;
-    width: 100%;
-    margin-left: 20px; }
-  .Footer .social {
-    width: 100%;
-    align-self: center;
-    display: flex;
-    justify-content: space-around; }
+.RenderList {
+  display: flex; }

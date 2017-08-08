@@ -15,7 +15,7 @@ class Content extends Component {
 
 Content.propTypes = {
   className: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default Content;

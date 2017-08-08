@@ -1,0 +1,35 @@
+@import '_variables.scss';
+
+.Main {
+  @include parallax;
+  background-image: url('/images/ec-bg.jpg');
+  color: $black;
+  height: $main-height;
+  padding-top: 20vh;
+  display: flex;
+  flex-flow: column nowrap;
+  // justify-content: center;
+
+  .Main-Quote {
+    align-self: flex-start;
+    margin: 0 0 80px 40px;
+    font-size: $huge;
+    color: $base;
+    font-weight: $font-bold; 
+    text-shadow: 2px 2px 2px whitesmoke;
+  }
+
+  .endorsements {
+    background-color: transparentize($white, 0.3);
+    width: 60%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
+  .Main-Content {
+    background-color: transparentize($white, 0.3);
+    // align-self: center;
+    width: 50%;
+    margin-left: 20px;
+  }
+}

@@ -1,13 +1,13 @@
 @import '_variables.scss';
 
 .About {
-  @include main-bg;
+  @include main-bg-rev;
   color: $black;
   height: $main-height;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  border-bottom: 2px solid $gray;
+  padding-top: 20vh;
 
   .About-Content {
     background-color: transparentize($white, 0.3);
@@ -23,6 +23,7 @@
     img {
       border: 3px $primary solid;
       border-radius: 50%;
+      box-shadow: 5px 5px 10px gray;
       align-self: center;
       width: 100%;
       height: auto;

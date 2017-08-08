@@ -1,12 +1,21 @@
-@import '_variables.scss';
-@import 'header.scss';
-@import 'main.scss';
-@import 'about.scss';
-@import 'issues.scss';
-@import 'involve.scss';
-@import 'footer.scss';
+@import './styles/_variables.scss';
+@import './styles/header.scss';
+@import './styles/main.scss';
+@import './styles/about.scss';
+@import './styles/issues.scss';
+@import './styles/involve.scss';
+@import './styles/footer.scss';
+
+// Font Awesome Imports:
+// @import './font-awesome/scss/';
+// @import './font-awesome/fonts/fontawesome-webfont.eot';
+
 
 .App {
   // text-align: center;
   min-height: 100vh;
+}
+
+h1 {
+  margin-left: 30px;
 }

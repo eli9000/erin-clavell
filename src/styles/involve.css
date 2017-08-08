@@ -14,10 +14,12 @@
   background-size: cover;
   background-image: url("/images/ec-bg2.jpg");
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding-top: 20vh; }
   .Involve .Involve-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
-    width: 50%; }
+    width: 50%;
+    margin-right: 20px; }

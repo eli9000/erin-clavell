@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
-
-import '../footer.scss';
+import IconLink from './lib/IconLink.js';
 
 class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <h1>Footer</h1>
+        <div className="copyright">
+          <i className="fa fa-copyright fa-lg"></i> by Committy to Elect Erin Clavell
+        </div>
+        <div className="social">
+          <IconLink name="facebook" size="2x" link="https://www.facebook.com/electerinclavell" />
+          <IconLink name="twitter" size="2x" link="https://twitter.com/Erinclavell1" />
+          <IconLink name="linkedin" size="2x" link="https://www.linkedin.com/in/erin-clavell-a8674a73/" />
+          <IconLink name="usd" size="2x" link="https://www.crowdpac.com/campaigns/294125/committee-to-elect-erin-clavell" />
+        </div>
       </div>
     );
   }
 }
 
 export default Footer;
+
+//<i className="fa fa-twitter fa-4x" style={{ color: 'red' }}></i>

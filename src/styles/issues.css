@@ -10,14 +10,16 @@
 .Issues {
   background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
-  height: 80vh;
+  height: 75vh;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 20vh; }
   .Issues .Issues-Content {
     background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
     width: 80%;
     max-height: 60vh;
+    margin-left: 20px;
     overflow: scroll; }
   .Issues .Issues-Image {
     align-self: flex-end; }
