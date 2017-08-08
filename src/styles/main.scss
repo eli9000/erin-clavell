@@ -2,7 +2,7 @@
 
 .Main {
   @include parallax;
-  background-image: url('/images/ec-bg.jpg');
+  background-image: url('/images/ec-bg.png');
   color: $black;
   height: $main-height;
   padding-top: 20vh;
@@ -12,7 +12,7 @@
 
   .Main-Quote {
     align-self: flex-start;
-    margin: 0 0 80px 40px;
+    margin: 0 0 40px 40px;
     font-size: $huge;
     color: $base;
     font-weight: $font-bold; 
@@ -20,10 +20,17 @@
   }
 
   .endorsements {
-    background-color: transparentize($white, 0.3);
+    // background-color: transparentize($white, 0.3);
+    color: black;
     width: 60%;
     margin-bottom: 30px;
     margin-left: 20px;
+
+    p {
+      border-left: 4px solid blue;
+      border-right: 4px solid blue;
+      background-color: transparentize($white, 0.8);
+    }
   }
 
   .Main-Content {

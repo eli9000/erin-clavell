@@ -12,14 +12,43 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/ec-bg2.jpg");
+  background-image: url("/images/ec-bg2.png");
   color: #14141e;
   height: 75vh;
   display: flex;
   justify-content: flex-end;
   padding-top: 20vh; }
   .Involve .Involve-Content {
-    background-color: rgba(255, 255, 255, 0.7);
+    color: red;
     align-self: center;
     width: 50%;
-    margin-right: 20px; }
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .Involve .Involve-Content h1 {
+      border-bottom: 3px solid red; }
+    .Involve .Involve-Content ul {
+      align-self: center;
+      display: flex;
+      flex-flow: column nowrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 400px; }
+      .Involve .Involve-Content ul li {
+        display: flex;
+        align-self: center;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bolder; }
+        .Involve .Involve-Content ul li a {
+          align-self: center;
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none; }
+        .Involve .Involve-Content ul li a:hover {
+          background-color: #555;
+          color: white; }

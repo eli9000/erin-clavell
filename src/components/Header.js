@@ -36,7 +36,7 @@ class Header extends Component {
                   <NavLink to="/involve" activeClassName="active">Get Involved</NavLink>
                 </li>
                 <li>
-                  <NavLink to="https://www.crowdpac.com/campaigns/294125/committee-to-elect-erin-clavell">DONATE</NavLink>
+                  <a href="https://www.crowdpac.com/campaigns/294125/committee-to-elect-erin-clavell">DONATE</a>
                 </li>
               </ul>
             </div>

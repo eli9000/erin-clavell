@@ -12,7 +12,7 @@ class About extends Component {
         <Content className="About-Content" title="About Me">
           <RenderList className="RenderList-About" data={ABOUT} />
         </Content>
-        <Image className="About-Image" src="/images/ec-about.jpg" height="auto" width="60%" />
+        <Image className="About-Image" src="/images/ec-about.png" height="auto" width="60%" />
       </div>
     );
   }

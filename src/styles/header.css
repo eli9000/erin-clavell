@@ -71,8 +71,7 @@
             .Header .header-rows .header-bottom-row .navbar ul li a:hover {
               background-color: lightcyan; }
             .Header .header-rows .header-bottom-row .navbar ul li .active {
-              border-bottom: 3px solid red;
-              border-top: 3px solid red; }
+              border-bottom: 3px solid red; }
           .Header .header-rows .header-bottom-row .navbar ul li:nth-child(5) {
             margin-left: auto;
             background-color: gold; }

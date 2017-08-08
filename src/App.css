@@ -80,8 +80,7 @@
             .Header .header-rows .header-bottom-row .navbar ul li a:hover {
               background-color: lightcyan; }
             .Header .header-rows .header-bottom-row .navbar ul li .active {
-              border-bottom: 3px solid red;
-              border-top: 3px solid red; }
+              border-bottom: 3px solid red; }
           .Header .header-rows .header-bottom-row .navbar ul li:nth-child(5) {
             margin-left: auto;
             background-color: gold; }
@@ -103,7 +102,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/ec-bg.jpg");
+  background-image: url("/images/ec-bg.png");
   color: #14141e;
   height: 75vh;
   padding-top: 20vh;
@@ -111,16 +110,20 @@
   flex-flow: column nowrap; }
   .Main .Main-Quote {
     align-self: flex-start;
-    margin: 0 0 80px 40px;
+    margin: 0 0 40px 40px;
     font-size: 60px;
     color: #14141e;
     font-weight: 700;
     text-shadow: 2px 2px 2px whitesmoke; }
   .Main .endorsements {
-    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
     width: 60%;
     margin-bottom: 30px;
     margin-left: 20px; }
+    .Main .endorsements p {
+      border-left: 4px solid blue;
+      border-right: 4px solid blue;
+      background-color: rgba(255, 255, 255, 0.2); }
   .Main .Main-Content {
     background-color: rgba(255, 255, 255, 0.7);
     width: 50%;
@@ -202,17 +205,46 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/ec-bg2.jpg");
+  background-image: url("/images/ec-bg2.png");
   color: #14141e;
   height: 75vh;
   display: flex;
   justify-content: flex-end;
   padding-top: 20vh; }
   .Involve .Involve-Content {
-    background-color: rgba(255, 255, 255, 0.7);
+    color: red;
     align-self: center;
     width: 50%;
-    margin-right: 20px; }
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .Involve .Involve-Content h1 {
+      border-bottom: 3px solid red; }
+    .Involve .Involve-Content ul {
+      align-self: center;
+      display: flex;
+      flex-flow: column nowrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 400px; }
+      .Involve .Involve-Content ul li {
+        display: flex;
+        align-self: center;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bolder; }
+        .Involve .Involve-Content ul li a {
+          align-self: center;
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none; }
+        .Involve .Involve-Content ul li a:hover {
+          background-color: #555;
+          color: white; }
 
 /*******************************************************************************
 																	STYLING

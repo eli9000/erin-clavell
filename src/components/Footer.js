@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="Footer">
         <div className="copyright">
-          <i className="fa fa-copyright fa-lg"></i> by Committy to Elect Erin Clavell
+          Copyright <i className="fa fa-copyright fa-lg fa-spin"></i> 2017 by <a href="https://eli9000.com">eli9000</a> Webmaster
         </div>
         <div className="social">
           <IconLink name="facebook" size="2x" link="https://www.facebook.com/electerinclavell" />

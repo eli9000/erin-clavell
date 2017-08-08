@@ -30,72 +30,70 @@
     justify-content: center;
     height: 50px;
 
-    .header-contact {
-      align-self: center;
-      width: 100%;
-      margin-left: 20px;
-    }
-
-    .header-donate {
-      align-self: center;
-      text-align: right;
-      width: 100%;
-      margin-right: 20px;
-    }
-  }
-
-  .header-bottom-row {
-    display: flex;
-    background-color: #fefefe;
-    overflow: hidden;
-    height: 80px;
-
-    .navbar {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      width: 100%;
-      
-      ul {
-        display: flex;
-        justify-content: flex-start;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+      .header-contact {
+        align-self: center;
         width: 100%;
+        margin-left: 20px;
+      }
 
-        li {
-          margin-left: 50px;
+      .header-donate {
+        align-self: center;
+        text-align: right;
+        width: 100%;
+        margin-right: 20px;
+      }
+    }
 
-          a {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 10px 16px;
-            text-decoration: none;
-            font-size: 20px;
-          }
+      .header-bottom-row {
+        display: flex;
+        background-color: #fefefe;
+        overflow: hidden;
+        height: 80px;
 
-          a:hover {
-            background-color: lightcyan;
-          }
+        .navbar {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          width: 100%;
+          
+          ul {
+            display: flex;
+            justify-content: flex-start;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
 
-          .active {
-            border-bottom: 3px solid red;
-            border-top: 3px solid red;
-          }
-        }
-        
-        li:nth-child(5) {
-         margin-left: auto;
-         background-color: gold;
+            li {
+              margin-left: 50px;
 
-         a:hover {
-           background-color: red;
-           color: white;
-         }
+              a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 10px 16px;
+                text-decoration: none;
+                font-size: 20px;
+              }
 
+              a:hover {
+                background-color: lightcyan;
+              }
+
+              .active {
+                border-bottom: 3px solid red;
+              }
+            }
+            
+            li:nth-child(5) {
+            margin-left: auto;
+            background-color: gold;
+
+            a:hover {
+              background-color: red;
+              color: white;
+            }
           }
         }
       }

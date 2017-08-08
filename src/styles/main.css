@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/ec-bg.jpg");
+  background-image: url("/images/ec-bg.png");
   color: #14141e;
   height: 75vh;
   padding-top: 20vh;
@@ -20,16 +20,20 @@
   flex-flow: column nowrap; }
   .Main .Main-Quote {
     align-self: flex-start;
-    margin: 0 0 80px 40px;
+    margin: 0 0 40px 40px;
     font-size: 60px;
     color: #14141e;
     font-weight: 700;
     text-shadow: 2px 2px 2px whitesmoke; }
   .Main .endorsements {
-    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
     width: 60%;
     margin-bottom: 30px;
     margin-left: 20px; }
+    .Main .endorsements p {
+      border-left: 4px solid blue;
+      border-right: 4px solid blue;
+      background-color: rgba(255, 255, 255, 0.2); }
   .Main .Main-Content {
     background-color: rgba(255, 255, 255, 0.7);
     width: 50%;
