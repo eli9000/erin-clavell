@@ -19,22 +19,46 @@
   display: flex;
   flex-flow: column nowrap; }
   .Main .Main-Quote {
-    align-self: flex-start;
+    align-self: center;
     margin: 0 0 40px 40px;
     font-size: 60px;
-    color: #14141e;
+    color: #ffffff;
     font-weight: 700;
-    text-shadow: 2px 2px 2px whitesmoke; }
+    text-shadow: 6px 6px 6px black; }
   .Main .endorsements {
     color: black;
+    font-size: 30px;
     width: 60%;
     margin-bottom: 30px;
-    margin-left: 20px; }
+    margin-left: 40px; }
     .Main .endorsements p {
-      border-left: 4px solid blue;
-      border-right: 4px solid blue;
-      background-color: rgba(255, 255, 255, 0.2); }
-  .Main .Main-Content {
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 50%;
-    margin-left: 20px; }
+      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px; }
+  .Main .help {
+    width: 40%;
+    margin-left: 50px; }
+    .Main .help ul {
+      list-style-type: none; }
+      .Main .help ul li {
+        margin-bottom: 20px;
+        font-size: 20px;
+        background: -webkit-linear-gradient(to right, #02acf4, rgba(254, 254, 254, 0));
+        /*Safari 5.1-6*/
+        background: -o-linear-gradient(to right, #02acf4, rgba(254, 254, 254, 0));
+        /*Opera 11.1-12*/
+        background: -moz-linear-gradient(to right, #02acf4, rgba(254, 254, 254, 0));
+        /*Fx 3.6-15*/
+        background: linear-gradient(to right, #02acf4, rgba(254, 254, 254, 0));
+        /*Standard*/
+        border-left: 5px solid blue;
+        overflow: visible;
+        white-space: nowrap; }
+        .Main .help ul li a {
+          display: block;
+          color: red;
+          padding: 10px 16px;
+          text-decoration: none;
+          text-shadow: 1px 1px white; }
+        .Main .help ul li a:hover {
+          background-color: blue; }

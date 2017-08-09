@@ -16,20 +16,28 @@
   justify-content: space-around;
   padding-top: 20vh; }
   .About .About-Content {
-    background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
-    width: 60%; }
+    width: 60%;
+    max-height: 60vh;
+    margin-right: 20px;
+    overflow: scroll; }
+    .About .About-Content ul {
+      list-style-type: circle; }
+      .About .About-Content ul li {
+        margin-bottom: 10px; }
   .About .About-Image {
     align-self: center;
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center; }
+    align-items: center; }
     .About .About-Image img {
       border: 3px #5C5D8D solid;
       border-radius: 50%;
       box-shadow: 5px 5px 10px gray;
       align-self: center;
       width: 100%;
-      height: auto; }
+      height: auto;
+      max-height: 500px;
+      max-width: 340px; }

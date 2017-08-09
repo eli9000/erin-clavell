@@ -14,7 +14,7 @@ class Header extends Component {
         <div className="header-rows">
           <div className="header-top-row">
             <div className="header-contact">
-              Call me anytime 801-232-2323 | electerinclavell@gmail.com
+              Call me anytime 801-232-2323
             </div>
             <div className="header-donate">
               Help our campaign and DONATE below <i className="fa fa-arrow-down fa-lg"></i>
@@ -27,7 +27,7 @@ class Header extends Component {
                   <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about" activeClassName="active">About Me</NavLink>
+                  <NavLink to="/about" activeClassName="active">Meet Erin</NavLink>
                 </li>
                 <li>
                   <NavLink to="/issues" activeClassName="active">On the Issues</NavLink>

@@ -8,8 +8,7 @@
 																	MIXINS
 *******************************************************************************/
 .Footer {
-  background: linear-gradient(#FEFEFE, #02ACF4);
-  background-color: #878787;
+  background-color: #02ACF4;
   color: #ffffff;
   height: 5vh;
   max-height: 5vh;
@@ -25,3 +24,7 @@
     align-self: center;
     display: flex;
     justify-content: space-around; }
+    .Footer .social i {
+      color: white; }
+    .Footer .social i:hover {
+      color: blue; }

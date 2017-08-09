@@ -80,12 +80,18 @@ $desktop-width: 1024px;
 
 
 // ******************************** Background Mixins
-@mixin header-bg {
-  background: $base-gradient;
-  // background: -webkit-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Safari 5.1-6*/
-  // background: -o-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Opera 11.1-12*/
-  // background: -moz-linear-gradient(rgba(2,172,244,1),rgba(254,254,254,0)); /*Fx 3.6-15*/
-  // background: linear-gradient(rgba(2,172,244,1), rgba(254,254,254,0)); /*Standard*/
+@mixin header-bg-right {
+  background: -webkit-linear-gradient(to right, rgba(2,172,244,1),rgba(254,254,254,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(to right, rgba(2,172,244,1),rgba(254,254,254,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(to right, rgba(2,172,244,1),rgba(254,254,254,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(2,172,244,1), rgba(254,254,254,0)); /*Standard*/
+}
+
+@mixin header-bg-left {
+  background: -webkit-linear-gradient(to left, rgba(2,172,244,1),rgba(254,254,254,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(to left, rgba(2,172,244,1),rgba(254,254,254,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(to left, rgba(2,172,244,1),rgba(254,254,254,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(2,172,244,1), rgba(254,254,254,0)); /*Standard*/
 }
 
 @mixin main-bg {
@@ -108,5 +114,7 @@ $desktop-width: 1024px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 }
+
+// ******************************** Button Mixins

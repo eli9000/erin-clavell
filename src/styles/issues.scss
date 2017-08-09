@@ -10,12 +10,20 @@
 
 
   .Issues-Content {
-    background-color: transparentize($white, 0.3);
+    // background-color: transparentize($white, 0.3);
     align-self: center;
     width: 80%;
     max-height: 60vh;
     margin-left: 20px;
     overflow: scroll;
+
+    ul {
+      list-style-type: circle;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
     
   }
 

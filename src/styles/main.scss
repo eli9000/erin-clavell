@@ -11,32 +11,61 @@
   // justify-content: center;
 
   .Main-Quote {
-    align-self: flex-start;
+    align-self: center;
     margin: 0 0 40px 40px;
     font-size: $huge;
-    color: $base;
+    color: $white;
     font-weight: $font-bold; 
-    text-shadow: 2px 2px 2px whitesmoke;
+    text-shadow: 6px 6px 6px black;
   }
 
   .endorsements {
     // background-color: transparentize($white, 0.3);
     color: black;
+    font-size: 30px;
     width: 60%;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
 
     p {
-      border-left: 4px solid blue;
-      border-right: 4px solid blue;
+      padding: 5px 10px;
+      // border-left: 4px solid blue;
+      // border-right: 4px solid blue;
       background-color: transparentize($white, 0.8);
+      border-radius: 10px;
     }
   }
 
-  .Main-Content {
-    background-color: transparentize($white, 0.3);
-    // align-self: center;
-    width: 50%;
-    margin-left: 20px;
+  .help {
+    width: 40%;
+    margin-left: 50px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        // line-height: 40px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        // background-color: transparentize($base-gradient, 0.5);
+        @include header-bg-right;
+        border-left: 5px solid blue;
+        overflow: visible;
+        white-space: nowrap;
+
+        a {
+          display: block;
+          color: red;
+          padding: 10px 16px;
+          text-decoration: none;
+          text-shadow: 1px 1px white;
+        }
+
+        a:hover {
+          background-color: blue;
+          // border-left: 5px solid red;
+        }
+      }
+    }
   }
 }

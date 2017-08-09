@@ -69,7 +69,7 @@
               text-decoration: none;
               font-size: 20px; }
             .Header .header-rows .header-bottom-row .navbar ul li a:hover {
-              background-color: lightcyan; }
+              border-bottom: 3px solid blue; }
             .Header .header-rows .header-bottom-row .navbar ul li .active {
               border-bottom: 3px solid red; }
           .Header .header-rows .header-bottom-row .navbar ul li:nth-child(5) {

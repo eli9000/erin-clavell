@@ -9,7 +9,7 @@ class IconLink extends Component {
 
     return (
       <a href={this.props.link}>
-        <i className={cName} style={{ color: 'white' }}></i>
+        <i className={cName}></i>
       </a>
     );
   }

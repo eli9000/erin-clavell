@@ -15,11 +15,14 @@
   justify-content: space-between;
   padding-top: 20vh; }
   .Issues .Issues-Content {
-    background-color: rgba(255, 255, 255, 0.7);
     align-self: center;
     width: 80%;
     max-height: 60vh;
     margin-left: 20px;
     overflow: scroll; }
+    .Issues .Issues-Content ul {
+      list-style-type: circle; }
+      .Issues .Issues-Content ul li {
+        margin-bottom: 10px; }
   .Issues .Issues-Image {
     align-self: flex-end; }

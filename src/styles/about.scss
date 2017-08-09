@@ -10,10 +10,20 @@
   padding-top: 20vh;
 
   .About-Content {
-    background-color: transparentize($white, 0.3);
+    // background-color: transparentize($white, 0.3);
     align-self: center;
     width: 60%;
-    
+    max-height: 60vh;
+    margin-right: 20px;
+    overflow: scroll;
+
+    ul {
+      list-style-type: circle;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .About-Image {
@@ -28,6 +38,8 @@
       align-self: center;
       width: 100%;
       height: auto;
+      max-height: 500px;
+      max-width: 340px;
     }
   }
 }
