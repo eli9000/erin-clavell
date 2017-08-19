@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="header-image">
-          <img src="./images/ec4mayor.png" alt="" height="125px" />
+          <img src="./images/ec4mayor.png" alt="" height="170px" />
         </div>
         <div className="header-rows">
           <div className="header-top-row">
@@ -30,7 +30,7 @@ class Header extends Component {
                   <NavLink to="/about" activeClassName="active">Meet Erin</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/issues" activeClassName="active">On the Issues</NavLink>
+                  <NavLink to="/issues" activeClassName="active">Issues</NavLink>
                 </li>
                 <li>
                   <NavLink to="/involve" activeClassName="active">Get Involved</NavLink>

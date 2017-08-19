@@ -13,8 +13,8 @@
     // background-color: transparentize($white, 0.3);
     color: black;
     align-self: center;
-    width: 50%;
-    margin-right: 20px;
+    width: 30%;
+    margin-right: 60px;
     text-align: center;
     // display: flex;
     // flex-flow: column nowrap;
@@ -34,20 +34,24 @@
         font-size: 20px;
         // background-color: transparentize($base-gradient, 0.5);
         @include header-bg-left;
-        border-right: 5px solid blue;
+        border-right: 5px solid $p-dark;
         overflow: visible;
         white-space: nowrap;
 
         a {
           display: block;
-          color: red;
+          color: $secondary;
           padding: 10px 16px;
           text-decoration: none;
           text-shadow: 1px 1px white;
         }
 
         a:hover {
-          background-color: blue;
+          background-color: $p-light;
+
+          i {
+            color: white;
+          }
         }
       }
     }

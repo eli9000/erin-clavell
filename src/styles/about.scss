@@ -10,7 +10,6 @@
   padding-top: 20vh;
 
   .About-Content {
-    // background-color: transparentize($white, 0.3);
     align-self: center;
     width: 60%;
     max-height: 60vh;
@@ -32,7 +31,7 @@
     @include flexbox-center;
 
     img {
-      border: 3px $primary solid;
+      border: 3px $p-dark solid;
       border-radius: 50%;
       box-shadow: 5px 5px 10px gray;
       align-self: center;

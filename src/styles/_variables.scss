@@ -16,12 +16,15 @@ $large:						      40px;
 $huge:							    60px;
 
 // ******************************** Colors:
-$primary: 							#5C5D8D;
-$secondary: 						#A8C69F;
-$tertiary:							#99A1A6;
+$primary: 							#29b6f6;
+$p-light:               #73e8ff;
+$p-dark:                #0086c3;
+$secondary: 						#ff5252;
+$s-light:               #ff867f;
+$s-dark:                #c50e29;  
 $base:									#14141e;
 $gray: 									#878787;
-$base-bg:               #02ACF4; // rgba(2, 172, 244)
+$base-bg:               $primary; // rgba(2, 172, 244)
 
 // ******************************** Colors: Text
 $color:									$base; // (reset)
@@ -33,7 +36,7 @@ $border-gray: 					transparentize($border-gray-solid, 0.6);
 $border-dark:						$base;
 
 // ******************************* Colors: Gradients
-$base-gradient:         linear-gradient(#02ACF4, #FEFEFE);
+$base-gradient:         linear-gradient($primary, #FEFEFE);
 
 // ******************************* Colors: Reference
 $white:									#ffffff;
@@ -118,3 +121,8 @@ $desktop-width: 1024px;
 }
 
 // ******************************** Button Mixins
+
+@keyframes test {
+  from {left: 0px;}
+  to {left: 200px;}
+}

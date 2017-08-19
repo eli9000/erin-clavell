@@ -9,7 +9,7 @@ class Issues extends Component {
   render() {
     return (
       <div className="Issues" id="issues">
-        <Content className="Issues-Content" title="On the Issues">
+        <Content className="Issues-Content" title="My Views">
           <RenderList className="RenderList-Issues" data={ISSUES} />
         </Content>
         <Image className="Issues-Image" src="/images/ec-transparent.png" />

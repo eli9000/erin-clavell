@@ -21,7 +21,7 @@
 
   .endorsements {
     // background-color: transparentize($white, 0.3);
-    color: black;
+    color: $base;
     font-size: 30px;
     width: 60%;
     margin-bottom: 30px;
@@ -29,41 +29,40 @@
 
     p {
       padding: 5px 10px;
-      // border-left: 4px solid blue;
-      // border-right: 4px solid blue;
       background-color: transparentize($white, 0.8);
       border-radius: 10px;
     }
   }
 
   .help {
-    width: 40%;
+    width: 30%;
     margin-left: 50px;
 
     ul {
       list-style-type: none;
 
       li {
-        // line-height: 40px;
         margin-bottom: 20px;
         font-size: 20px;
-        // background-color: transparentize($base-gradient, 0.5);
         @include header-bg-right;
-        border-left: 5px solid blue;
+        border-left: 5px solid $p-dark;
         overflow: visible;
         white-space: nowrap;
 
         a {
           display: block;
-          color: red;
+          color: $secondary;
           padding: 10px 16px;
           text-decoration: none;
           text-shadow: 1px 1px white;
         }
 
         a:hover {
-          background-color: blue;
-          // border-left: 5px solid red;
+          background-color: $primary;
+
+          i {
+            color: white;
+          }
         }
       }
     }

@@ -7,6 +7,12 @@
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
+@keyframes test {
+  from {
+    left: 0px; }
+  to {
+    left: 200px; } }
+
 .About {
   background: linear-gradient(#02acf4, #FEFEFE);
   color: #14141e;
@@ -33,7 +39,7 @@
     justify-content: center;
     align-items: center; }
     .About .About-Image img {
-      border: 3px #5C5D8D solid;
+      border: 3px #0086c3 solid;
       border-radius: 50%;
       box-shadow: 5px 5px 10px gray;
       align-self: center;

@@ -7,8 +7,14 @@
 /*******************************************************************************
 																	MIXINS
 *******************************************************************************/
+@keyframes test {
+  from {
+    left: 0px; }
+  to {
+    left: 200px; } }
+
 .Footer {
-  background-color: #02ACF4;
+  background-color: #0086c3;
   color: #ffffff;
   height: 5vh;
   max-height: 5vh;
@@ -27,4 +33,4 @@
     .Footer .social i {
       color: white; }
     .Footer .social i:hover {
-      color: blue; }
+      color: #ff5252; }

@@ -2,7 +2,7 @@
 
 .Footer {
   // @include main-bg;
-  background-color: $base-bg;
+  background-color: $p-dark;
   color: $white;
   height: 5vh;
   max-height: 5vh;
@@ -27,7 +27,7 @@
     }
 
     i:hover {
-      color: blue;
+      color: $secondary;
     }
   }
 }
